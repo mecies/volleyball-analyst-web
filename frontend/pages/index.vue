@@ -1,17 +1,7 @@
 <template>
   <section class="container">
-    <div>
-      <h1 class="title">
-        frontend
-      </h1>
-      <h2 class="subtitle">
-        Demo Spring Boot + Nuxt
-      </h2>
-      <div class="links">
-        <el-button type="primary" plain @click.native.prevent="$router.push({ path: '/users' })">User management</el-button>
-        <el-button type="primary" plain @click.native.prevent="ping">Ping</el-button>
-      </div>
-    </div>
+    <div>e e eluwina</div>
+    <div>jechac dynksa surysysys</div>
   </section>
 </template>
 
@@ -19,13 +9,12 @@
 export default {
   methods: {
     ping() {
-      this.$axios.$get('/api/ping')
-        .then(result => {
-          this.$alert('Response from the server: ' + result, 'Ping')
-        })
+      this.$axios.$get("/api/ping").then(result => {
+        this.$alert("Response from the server: " + result, "Ping");
+      });
     }
   }
-}
+};
 </script>
 
 <style>
@@ -39,8 +28,8 @@ export default {
 }
 
 .title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   display: block;
   font-weight: 300;
   font-size: 100px;
